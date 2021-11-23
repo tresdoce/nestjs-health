@@ -15,6 +15,69 @@
     <br/> 
 </p>
 
+Esta dependencia está pensada para ser utilizada en [NestJs Starter](https://github.com/rudemex/nestjs-starter), o 
+cualquier proyecto que utilice una configuración centralizada, siguiendo la misma arquitectura del starter.
+
+## Glosario
+
+- [🥳 Demo](https://rudemex-nestjs-starter.herokuapp.com/docs)
+- [📝 Requerimientos básicos](#basic-requirements)
+- [🛠️ Instalar dependencia](#install-dependencie)
+- [⚙️ Configuración](#configurations)
+- [📤 Commits](#commits)
+- [📄 Changelog](./CHANGELOG.md)
+- [📜 License MIT](license.md)
+
+---
+
+<a name="basic-requirements"></a>
+
+## 📝 Requerimientos básicos
+
+- [NestJs Starter](https://github.com/rudemex/nestjs-starter)
+- Node.js v14.15.4 or higher ([Download](https://nodejs.org/es/download/))
+- NPM v6.14.10 or higher
+- NestJS v8.2.0 or higher ([Documentación](https://nestjs.com/))
+
+<a name="install-dependencie"></a>
+
+## 🛠️ Instalar dependencia
+
+```
+npm install @tresdoce/nestjs-health
+```
+
+<a name="configurations"></a>
+
+## ⚙️ Configuración
+
+Para excluir los paths `/liveness` y `/readiness` hay que ajustar el `setGlobalPrefix` agregando los options exclude que exporta la dependencia.
+
+```typescript
+// .src/main.ts
+
+import { controllersExcludes } from '@tresdoce/nestjs-health';
+
+app.setGlobalPrefix(`${server.context}`, {
+    exclude: [...controllersExcludes],
+});
+```
+
+```typescript
+// .src/app.module.ts
+import { HealthModule } from '@tresdoce/nestjs-health';
+import { config } from './config';
+
+@Module({
+    ...,
+    imports: [
+        HealthModule.register(config()),
+    ],
+    ...,
+})
+export class AppModule {}
+```
+
 <a name="commits"></a>
 
 ## 📤 Commits
@@ -33,6 +96,10 @@ referencia [`conventional commits`](https://www.conventionalcommits.org/en/v1.0.
 - **type:** chore, docs, feat, fix, refactor (más comunes)
 - **scope:** indica la página, componente, funcionalidad
 - **description:** comienza en minúsculas y no debe superar los 72 caracteres.
+
+## 📄 Changelog
+
+All notable changes to this package will be documented in [Changelog](./CHANGELOG.md) file.
 
 ---
 
