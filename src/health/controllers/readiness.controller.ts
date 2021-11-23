@@ -19,7 +19,6 @@ export class ReadinessController {
             return () => this.http.pingCheck(`${key}`, `${urlService.origin}`);
         });
 
-        //return await this.health.check([...servicesPingCheckList]);
         const response = this.health.check([...servicesPingCheckList]);
         return (await response).info;
     }
