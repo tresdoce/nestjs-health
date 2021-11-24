@@ -25,6 +25,7 @@
     "url": "https://github.com/tresdoce/nestjs-health/issues"
   },
   "homepage": "https://github.com/tresdoce/nestjs-health#readme",
+  "private": false,
   "scripts": {
     "prebuild": "shx rm -rf pkg",
     "build": "pika build",

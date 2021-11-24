@@ -62,7 +62,7 @@ jobs:
           npm run build
           cd ./pkg
           npm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
-          npm publish
+          npm publish --access public
           cd ..
           git push --follow-tags origin master
       - name: "📄 Create Changelog"
