@@ -32,7 +32,7 @@ describe('ReadinessController', () => {
         expect(controller).toBeDefined();
     });
 
-    it('should be return up', async () => {
+    it('should be return up services', async () => {
         expect(await controller.check()).toEqual({ rickAndMortyAPI: { status: 'up' } });
     });
 });

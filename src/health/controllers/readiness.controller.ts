@@ -1,8 +1,8 @@
 import {Controller, Get, Inject} from '@nestjs/common';
 import {HealthCheck, HealthCheckService, HttpHealthIndicator} from '@nestjs/terminus';
-import {CONFIG_OPTIONS} from "../constants";
+import {CONFIG_OPTIONS} from '../constants';
 
-@Controller({})
+@Controller()
 export class ReadinessController {
     constructor(
         @Inject(CONFIG_OPTIONS) private readonly appConfig: any,

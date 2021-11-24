@@ -12,7 +12,7 @@
     <img alt="Codecov" src="https://img.shields.io/codecov/c/github/tresdoce/nestjs-health?logoColor=FFFFFF&logo=Codecov&labelColor=#F01F7A">
     <img src="https://sonarcloud.io/api/project_badges/measure?project=tresdoce_nestjs-health&metric=alert_status" alt="sonarcloud">
     <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/tresdoce/nestjs-health">
-    <br/> 
+    <br/>
 </p>
 
 Esta dependencia está pensada para ser utilizada en [NestJs Starter](https://github.com/rudemex/nestjs-starter), o 

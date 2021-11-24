@@ -5,7 +5,7 @@ import {TerminusModule} from '@nestjs/terminus';
 import {LivenessController} from './controllers/liveness.controller';
 import {ReadinessController} from './controllers/readiness.controller';
 
-import {CONFIG_OPTIONS} from "./constants";
+import {CONFIG_OPTIONS} from './constants';
 
 @Global()
 @Module({})

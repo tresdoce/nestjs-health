@@ -16,7 +16,7 @@ describe('LivenessController', () => {
         expect(controller).toBeDefined();
     });
 
-    it('should be return up', () => {
+    it('should be return up liveness', () => {
         expect(controller.getLiveness()).toEqual({ status: 'up' });
     });
 });
