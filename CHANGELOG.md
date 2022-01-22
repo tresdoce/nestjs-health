@@ -1,6 +1,14 @@
-<div align="center"><h1>📝 Changelog</h1><p>All changes of this package will be documented in this file.</p></div>
+<div align="center"><h1>📝 Changelog</h1><p>All changes of this project will be documented in this file.</p></div>
 
 ---
+
+### [0.0.4](https://github.com/tresdoce/nestjs-health/compare/v0.0.3...v0.0.4) (2022-01-22)
+
+
+### 👨‍💻 Chores
+
+* update dependencies ([75ddb6a](https://github.com/tresdoce/nestjs-health/commit/75ddb6a5dd07be445f9bfeab958baf9365300b53))
+* **versionrc:** edit configuration of version rc ([1eebffa](https://github.com/tresdoce/nestjs-health/commit/1eebffa676d69e33d7059289bdb8517320d47862))
 
 ### [0.0.3](https://github.com/tresdoce/nestjs-health/compare/v0.0.2...v0.0.3) (2022-01-17)
 

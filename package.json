@@ -1,6 +1,6 @@
 {
   "name": "@tresdoce/nestjs-health",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NestJS health checks module",
   "author": {
     "name": "Maximiliano \"Mex\" Delgado",
