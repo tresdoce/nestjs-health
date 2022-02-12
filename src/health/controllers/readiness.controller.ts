@@ -1,5 +1,6 @@
 import { Controller, Get, Inject } from '@nestjs/common';
 import { HealthCheck, HealthCheckService, HttpHealthIndicator } from '@nestjs/terminus';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 import { URL } from 'url';
 
 import { CONFIG_OPTIONS } from '../constants';
@@ -13,6 +14,7 @@ export class ReadinessController {
   ) {}
 
   @Get('readiness')
+  @ApiExcludeEndpoint()
   @HealthCheck()
   async check() {
     const servicesPingCheckList = Object.keys(this.appConfig.services).map((key) => {
