@@ -2,6 +2,14 @@
 
 ---
 
+### [0.0.5](https://github.com/tresdoce/nestjs-health/compare/v0.0.4...v0.0.5) (2022-02-12)
+
+
+### 👨‍💻 Chores
+
+* add peer dependencie swagger ([64607e1](https://github.com/tresdoce/nestjs-health/commit/64607e13b11d5f8aa40132b2e8b78b522e1aeeca))
+* exclude endpoints to swagger ([ba71366](https://github.com/tresdoce/nestjs-health/commit/ba713660797479e87d54c9a4448738e80fe11875))
+
 ### [0.0.4](https://github.com/tresdoce/nestjs-health/compare/v0.0.3...v0.0.4) (2022-01-22)
 
 
